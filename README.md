@@ -18,7 +18,7 @@ import ActionSheet from 'react-native-actionsheet'
 
 const CANCEL_INDEX = 0
 const DESTRUCTIVE_INDEX = 4
-const options = [ 'Cancel', 'Apple', 'Banana', 'Watermelon', 'Durian' ]
+const options = [ {label:'Cancel'},{label:'Canel'},{label:'213'},{label:'12313'} ]
 const title = 'Which one do you like?'
 
 class ExampleA extends React.Component {
@@ -49,6 +49,7 @@ class ExampleA extends React.Component {
         <ActionSheet
           ref={o => this.ActionSheet = o}
           title={title}
+          labelName={labelName}
           options={options}
           cancelButtonIndex={CANCEL_INDEX}
           destructiveButtonIndex={DESTRUCTIVE_INDEX}
@@ -73,11 +74,11 @@ import { ActionSheetCustom as ActionSheet } from 'react-native-actionsheet'
 const CANCEL_INDEX = 0
 const DESTRUCTIVE_INDEX = 4
 
-const options = [ 
-  'Cancel', 
-  'Apple', 
+const options = [
+  'Cancel',
+  'Apple',
   <Text style={{color: 'yellow'}}>Banana</Text>,
-  'Watermelon', 
+  'Watermelon',
   <Text style={{color: 'red'}}>Durian</Text>
 ]
 
@@ -141,6 +142,12 @@ class ExampleB extends React.Component {
         <td>options</td>
         <td></td>
         <td>PropTypes.arrayOf([PropTypes.string, PropTypes.element])</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>labelName</td>
+        <td></td>
+        <td>label名字 || 'label'</td>
         <td></td>
     </tr>
     <tr>
