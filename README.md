@@ -6,7 +6,7 @@ Cross platform ActionSheet. This component implements a custom ActionSheet  and 
 # Installation
 
 ```
-npm i react-native-actionsheet --save
+npm i react-native-actionsheet-hm --save
 ```
 
 ## Usage
