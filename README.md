@@ -113,6 +113,7 @@ class ExampleB extends React.Component {
           ref={o => this.ActionSheet = o}
           title={title}
           options={options}
+          labelName={labelName}
           cancelButtonIndex={CANCEL_INDEX}
           destructiveButtonIndex={DESTRUCTIVE_INDEX}
           onPress={this.handlePress}
